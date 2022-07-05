@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portfolio Survey Form</title>
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+    </head>
+    <body>
+        <h1 id="title">Portfolio Survey</h1>
+        <p class="description">A Quick Survey For Employers To Rate My Portfolio</p>
+        <form action='https://register-demo.freecodecamp.org' id="survey-form">
+            <fieldset>
+                <label id="name-label">Name <input class="text" type="text" id="name" required placeholder="ex. John Doe"></label>
+                <label>Company <input class="text" type="text" id="company" required placeholder="ex. Buisness Inc."></label>
+                <label id="email-label">Email <input class="text" type="email" id="email" required placeholder="ex. Doe.John@email.com"></label>
+                <label id="number-label">Age (optional) <input class="text" type="number" id="number" min="18" max="110" placeholder="ex. 56"></label>
+                <label>How Would You Rate My Portfolio?
+                    <select id="dropdown">
+                        <option value="">(select)</option>
+                        <option value="1">Best I've Ever Seen</option>
+                        <option value="2">Excellent But Not Mindblowing</option>
+                        <option value="3">Pretty Good</option>
+                        <option value="4">It's Getting There</option>
+                        <option value="5">It's... a portfolio... I guess</option>
+                        <option value="6">Pretty Bad</option>
+                        <option value="7">Find Another Carreer</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <p>Would You Hire Me?</p>
+                <label><input type="radio" name="radio" class="radio">Yes</label>
+                <label><input type="radio" name="radio" class="radio no">No</label>                
+            </fieldset>
+            <fieldset>
+                <p>Which Of My Skills Would You Like To See Improved:</p>
+                <label><input value="1" class="check" type="checkbox"> Front-End (HTML/CSS)</label>
+                <label><input value="2" class="check" type="checkbox"> Front-End (JavaScript)</label>
+                <label><input value="3" class="check" type="checkbox"> Front-End (React)</label>
+                <label><input value="4" class="check" type="checkbox"> Back-End</label>
+                <label><input value="5" class="check" type="checkbox"> Data Analysis</label>
+                <label><input value="6" class="check" type="checkbox"> Cloud Computing</label>
+                <label><input value="7" class="check" type="checkbox"> AI/Machine Learning</label>
+            </fieldset>
+            <fieldset>
+                <label>Any Comments or Questions: 
+                    <textarea name="bio" rows="5" cols="50" placeholder="I like your ability to..."></textarea>
+                </label>
+            </fieldset>
+            <input type="submit" value="Submit" id="submit"/>
+        </form>
+    </body>    
+</html>

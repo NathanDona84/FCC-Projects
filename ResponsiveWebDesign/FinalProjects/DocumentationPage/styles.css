@@ -1,0 +1,82 @@
+html{
+    background-color: rgba(16, 16, 16, 0.964);
+    color: rgb(217, 217, 217);
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+.left{
+    width: 20%;
+    height: 100vh;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    position: fixed;
+    border-right: 7px solid #333;
+}
+article{
+    padding-left: 2%;
+}
+h1{
+    font-size: 2vw;
+    padding-left: 5%;
+    font-weight: 400;
+}
+.left li{
+    margin: 0;
+    width: 100%;
+    font-size: 1.1vw;
+    font-weight: 100;
+    padding: 2.6% 0 2.6% 10%;
+    border-bottom: 2px solid #333;
+    border-top: 2px solid #333;
+    
+}
+.left li:first-of-type{
+    border-top: 4px solid #333;
+}
+.left li:last-of-type{
+    border-bottom: none;
+}
+.left ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%
+}
+a{
+    display: block;
+    width: 100%;
+    text-decoration: none;
+}
+.left li:hover{
+    background-color: rgba(255, 255, 255, 0.152);
+}
+a:active {
+    color: white;
+}
+a:visited, a, .left li{
+    color: white;
+}
+header{
+    font-size: 2vw;
+    text-align: left;
+    font-weight: normal;
+}
+.main-section:not(:last-of-type){
+    margin-bottom: 3.5%;
+}
+main{
+    display: inline-block;
+    width: 75%;
+    position: relative;
+    font-size: 1vw;
+    left: 24%;
+    padding-top: 2%;
+}
+body{
+    padding: 25px 25px 25px 0px;
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
