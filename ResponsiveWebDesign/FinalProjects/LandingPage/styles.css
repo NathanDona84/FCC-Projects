@@ -71,7 +71,7 @@ main{
     display: inline-block;
 }
 .icons{
-    margin: 5% 0 0 23%;
+    margin: 5% 0 0 20vw;
     width: 8vw;
 }
 i{
@@ -80,27 +80,31 @@ i{
     color: orange
 }
 i:not(:first-of-type){
-    margin-top: 60%;
+    margin-top: 5vw;
 }
 #features{
-    vertical-align: 0px;
+    vertical-align: -3px;
+    width: 70vw;
 }
 #features h1{
     font-size: calc(12px + .8vw);
     margin: 0;
 }
 #features h1:not(:first-of-type){
-    margin-top: 75px;
+    margin-top: 5vw;
 }
 #features p{
     margin: 0;
+    font-size: calc(10px + .4vw);
 }
 #how-it-works{
-    margin: 70px 0 70px 29%;
+    margin: 70px 0vw;
+    width: 100%;
 }
 #how-it-works iframe{
     height: 350px;
     width: 650px;
+    margin: 0 30%;
 }
 #pricing{
     display: flex;
@@ -145,7 +149,7 @@ footer{
 footer p{
     width: 100%;
     text-align: right;
-    margin: 10px 0 0 0;
+    margin: 10px 0 10px 0;
 }
 footer span{
     margin-left: 30px;
@@ -181,5 +185,58 @@ a{
     .nav{
         font-size: 10px;
         top: 4.5%;
+    }
+}
+@media(max-width: 1360px){
+    #features{
+        vertical-align: 3px;
+    }
+}
+@media(max-width: 1220px){
+    #features h1:not(:first-of-type){
+        margin-top: 4vw;
+    }
+}
+@media(max-width: 1000px){
+    .icons {
+        margin-left: 10vw;
+    }
+    #features{
+        width: 79vw;
+    }
+}
+@media(max-width: 800px){
+    .icons {
+        margin-left: 1vw;
+        margin-right: 10px;
+    }
+    #features{
+        width: 80vw;
+        margin-left: 10px;
+    }
+}
+@media(max-width: 1400px){
+    #how-it-works iframe{
+        margin: 0 25vw;
+    }
+}
+@media(max-width: 1000px){
+    #how-it-works iframe{
+        margin: 0 20vw;
+    }
+}
+@media(max-width: 800px){
+    #how-it-works iframe{
+        margin: 0 10vw;
+    }
+}
+@media(max-width: 750px){
+    #how-it-works iframe{
+        margin: 0 5vw;
+    }
+}
+@media(max-width: 680px){
+    #how-it-works iframe{
+        margin: 0;
     }
 }
